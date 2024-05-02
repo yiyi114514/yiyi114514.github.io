@@ -1,1 +1,84 @@
-<h1>114514</h1>
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>手机响应式布局示例</title>
+<style>
+  /* 基本样式 */
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+
+  /* 默认样式，适用于所有设备 */
+  .container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+
+  header, section, footer {
+    padding: 20px;
+    text-align: center;
+  }
+
+  header {
+    background: #333;
+    color: #fff;
+  }
+
+  section {
+    background: #f4f4f4;
+  }
+
+  footer {
+    background: #333;
+    color: #fff;
+  }
+
+  /* 响应式样式，适用于手机 */
+  @media screen and (max-width: 600px) {
+    /* 在手机屏幕上，将导航栏变为一行 */
+    .nav {
+      display: block;
+    }
+
+    .nav li {
+      display: inline;
+      margin-right: 10px;
+    }
+
+    /* 调整段落字体大小 */
+    p {
+      font-size: 14px;
+    }
+  }
+</style>
+</head>
+<body>
+  <header>
+    <h1>响应式布局示例</h1>
+  </header>
+
+  <nav class="container">
+    <ul class="nav">
+      <li><a href="#">首页</a></li>
+      <li><a href="#">关于我们</a></li>
+      <li><a href="#">服务</a></li>
+      <li><a href="#">联系方式</a></li>
+    </ul>
+  </nav>
+
+  <section class="container">
+    <h2>欢迎来到我们的网站</h2>
+    <p>这是一个响应式布局的示例，当你在手机上查看这个页面时，布局会自动适应屏幕尺寸。</p>
+  </section>
+
+  <footer class="container">
+    &copy; 2024 版权所有
+  </footer>
+</body>
+</html>
